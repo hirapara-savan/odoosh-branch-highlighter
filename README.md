@@ -33,7 +33,7 @@ Since this extension is distributed via GitHub, you can install it directly in G
 
 1. **Clone or Download the Repository:**
    ```bash
-   git clone https://github.com/hirapara-savan/odoosh-branch-highlighter.git
+   git clone https://github.com/savan-hirapara/odoosh-branch-highlighter.git
    ```
    *(Or download the repository as a ZIP archive and extract it).*
 
