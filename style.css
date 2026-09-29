@@ -1,0 +1,10 @@
+/* 
+   We keep only structural CSS here. 
+   The actual colors are dynamically injected into the <head> by content.js 
+   so we can support user-customizable color pickers.
+*/
+
+/* Strip backgrounds from children so the blue doesn't hide our color */
+li[data-active-branch="true"] * {
+    background-color: transparent !important;
+}

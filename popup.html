@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odoo.sh Highlighter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 280px;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #017e84; /* Signature Odoo Teal */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 2px solid #015e62;
+        }
+        .content {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        input[type="color"] {
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 36px;
+            height: 30px;
+            padding: 0;
+            background: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #017e84;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.2s;
+            margin-top: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+        button:hover {
+            background-color: #015e62;
+        }
+        #status {
+            margin-top: 12px;
+            color: #28a745;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+            background-color: #e6f4ea;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #c3e6cb;
+        }
+        .footer {
+            text-align: center;
+            padding: 12px;
+            font-size: 12px;
+            color: #777;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Odoo.sh Highlighter
+    </div>
+    <div class="content">
+        <div class="form-group">
+            <label>Production</label>
+            <input type="color" id="color-prod" value="#ff4d4d">
+        </div>
+        <div class="form-group">
+            <label>Staging</label>
+            <input type="color" id="color-staging" value="#ffc107">
+        </div>
+        <div class="form-group">
+            <label>Development</label>
+            <input type="color" id="color-dev" value="#28a745">
+        </div>
+        <button id="save">Apply Colors</button>
+        <div id="status">Colors applied live!</div>
+    </div>
+    <div class="footer">
+        Active Branch Customizer
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
